@@ -1,11 +1,390 @@
-body{
-    margin: 0;
-    padding: 0;
-font-family: 'Roboto', sans-serif;
+/* Global body style*/
+body {
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
-.logo a{
-    font-family: 'Raleway', sans-serif;
+
+/* Header styles */
+header {
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+  margin: auto;
 }
-.content ul{
-    list-style: none;
+
+/* Header topbar styles */
+header .top {
+  height: 80px;
+  margin: 0;
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+}
+
+/* Header logo styles */
+header .logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+}
+header .logo a {
+  text-decoration: none;
+  color: #000000;
+}
+header .logo span {
+  color: #2196f3;
+}
+
+/* Header menu styles */
+header .menu {
+  list-style-type: none;
+  margin-top: 32px;
+}
+
+header .menu li {
+  display: inline-block;
+  margin-left: 46px;
+}
+
+header .menu a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+header .menu a:hover,
+header .menu a:focus {
+  color: #2196f3;
+}
+
+/* Header contact styles */
+header .contact {
+  list-style: none;
+  margin-top: 32px;
+}
+header .contact li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+header .contact a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+header .contact a:hover,
+header .contact a:focus {
+  color: #2196f3;
+}
+
+/* Header box styles */
+header .box {
+  width: 1600px;
+  height: 600px;
+  background: #2f303a;
+  margin: auto;
+}
+
+header .box .main-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  width: 696px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+
+header .box button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  color: #ffffff;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+}
+
+/* Main styles for index.html */
+.content {
+  margin: auto;
+}
+.content #option {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  width: 100%;
+}
+.content #option .items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.content #option .item {
+  display: inline-block;
+  margin: 0 15px;
+}
+.content #option .item .box {
+  width: 270px;
+  height: 101px;
+}
+
+.content #option .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #212121;
+}
+.content #option .description {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.content #wedo {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  width: 1600px;
+}
+
+.content #wedo h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.content #wedo .items {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.content #wedo .item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.content #team {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: #f5f4fa;
+  width: 1600px;
+}
+
+.content #team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.content #team .items {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.content #team .item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.content #team .box {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.content #team .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.content #team .workplace {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Main styles for portfolio.html */
+.portfolio {
+}
+.portfolio #filter {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+
+.portfolio #filter .items {
+  list-style: none;
+}
+.portfolio #filter .item {
+  display: inline-block;
+}
+
+.portfolio #filter input[type="button"] {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  width: 93px;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.portfolio #filter input[type="button"]:hover {
+  width: 93px;
+  height: 38px;
+  background: #2196f3;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.portfolio #filter input[type="button"]:focus {
+  width: 93px;
+  height: 38px;
+  background: #2196f3;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.portfolio #projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio #projects .photo {
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  margin: 15px 15px;
+}
+
+.portfolio #projects .name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin: 20px 0 0 24px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.portfolio #projects .type {
+  font-size: 16px;
+  line-height: 1.87;
+  margin: 4px 0 0 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Footer styles */
+footer {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 252px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-left: 215px;
+  margin-top: 60px;
+}
+footer .logo a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .logo span {
+  color: #2196f3;
+}
+
+footer address .items {
+  list-style: none;
+  font-style: normal;
+  margin-left: 180px;
+  margin-bottom: 60px;
+}
+
+footer address .item:first-child {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+footer address .item a {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+footer address .item a:hover,
+footer address .item a:focus {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration: none;
 }
