@@ -251,8 +251,6 @@ header .box button {
 }
 
 /* Main styles for portfolio.html */
-.portfolio {
-}
 .portfolio #filter {
   display: flex;
   justify-content: center;
